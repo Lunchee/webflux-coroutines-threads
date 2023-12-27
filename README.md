@@ -1,2 +1,3 @@
-# webflux-coroutines-threads
-Threading with Spring WebFlux and Kotlin coroutines
+# Spring WebFlux threading with Kotlin coroutines
+
+This application shows which Thread Pools are used when building a Spring WebFlux application on Kotlin coroutines.
