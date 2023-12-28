@@ -22,6 +22,7 @@ class HelloController(private val webClient: WebClient) {
 
         // It executes within a blocking thread pool of Spring WebFlux with the Unconfined Dispatcher
         // because a controller method with a plain DTO return type is treated as blocking method by WebFlux.
+        // See: https://docs.spring.io/spring-framework/reference/web/webflux/config.html#webflux-config-blocking-execution
         println("Running on ${Thread.currentThread()} at the beginning")
 
         executeWebClientRequest().awaitSingleOrNull()
